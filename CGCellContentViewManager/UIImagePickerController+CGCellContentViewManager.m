@@ -26,6 +26,8 @@
 
 #import "UIImagePickerController+CGCellContentViewManager.h"
 #import "UIView+CGCellContentViewManager.h"
+#import "NSObject+CGHook.h"
+#import <objc/runtime.h>
 
 @implementation UIImagePickerController (CGCellContentViewManager)
 
@@ -43,8 +45,8 @@
 
 + (void)load {
     
-    /// Method Swizzling for selector (viewDidAppear:)
-    CG_Instance_MethodSwizzling(@selector(viewDidAppear:), @selector(cg_viewDidAppear:))
+    // Method Swizzling for selector (viewDidAppear:)
+    [self instanceMethodSwizzlingFromSelector:@selector(viewDidAppear:) toSelector:@selector(cg_viewDidAppear:)];
 }
 
 - (void)cg_viewDidAppear:(BOOL)animated {

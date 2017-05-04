@@ -1,10 +1,10 @@
 //
-//  UIView+CGCellContentViewManager.h
-//  CGCellContentViewManager
+//  NSObject+CGHook.m
+//  CGCellContentViewManagerDemo
 //
-//  Created by Coder Gin on 16/11/11
+//  Created by Gin on 2017/5/4.
 //
-// Copyright (c) 2016 Coder Gin ( https://github.com/CoderGin/CGCellContentViewManager )
+// Copyright (c) 2017 Coder Gin ( https://github.com/CoderGin/CGCellContentViewManager )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -24,20 +24,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import "NSObject+CGHook.h"
+#import <objc/runtime.h>
 
-/// This category will work automatically, as you drag it in your project.
-/// Both supports Objective-C and Swift
-@interface UIView (CGCellContentViewManager)
+@implementation NSObject (CGHook)
 
-/// This bool value controls whether the category will work for a view.
-/// Default is NO for all kinds of UIView, incluing UITableViewCell.
-/// If you set YES for a kind of UIView,
-/// means that CGCellContentViewManager will not work for the view,
-/// and the view in a cell's contentView will change backgroundColor as native style while you're clicking the cell.
-/// If you set YES for a kind of UITableViewCell,
-/// means that CGCellContentViewManager will not work for the cell,
-/// and the subviews in the cell's contentView will change backgroundColor as native style while you're clicking the cell.
-@property (nonatomic, assign) BOOL cg_cellContentViewManagerDisabled;
++ (void)instanceMethodSwizzlingFromSelector:(SEL)oriSelector toSelector:(SEL)swSelector {
+    
+    Class class = [self class];
+    Method originalMethod = class_getInstanceMethod(class, oriSelector);
+    Method swizzledMethod = class_getInstanceMethod(class, swSelector);
+    BOOL didAddMethod = class_addMethod(class, oriSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+    if (didAddMethod) {
+        class_replaceMethod(class, swSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+    } else {
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
+}
 
 @end

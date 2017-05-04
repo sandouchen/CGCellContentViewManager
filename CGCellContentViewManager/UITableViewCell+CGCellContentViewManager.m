@@ -26,6 +26,8 @@
 
 #import "UITableViewCell+CGCellContentViewManager.h"
 #import "UIView+CGCellContentViewManager.h"
+#import "NSObject+CGHook.h"
+#import <objc/runtime.h>
 
 @implementation UIView (_CGCellContentViewManager)
 
@@ -48,10 +50,10 @@
 
 + (void)load {
     
-    /// Method Swizzling for selector (setHighlighted:animated:)
-    CG_Instance_MethodSwizzling(@selector(setHighlighted:animated:), @selector(cg_setHighlighted:animated:))
-    /// Method Swizzling for selector (setSelected:animated:)
-    CG_Instance_MethodSwizzling(@selector(setSelected:animated:), @selector(cg_setSelected:animated:))
+    // Method Swizzling for selector (setHighlighted:animated:)
+    [self instanceMethodSwizzlingFromSelector:@selector(setHighlighted:animated:) toSelector:@selector(cg_setHighlighted:animated:)];
+    // Method Swizzling for selector (setSelected:animated:)
+    [self instanceMethodSwizzlingFromSelector:@selector(setSelected:animated:) toSelector:@selector(cg_setSelected:animated:)];
 }
 
 - (void)cg_setHighlighted:(BOOL)highlighted animated:(BOOL)animated {

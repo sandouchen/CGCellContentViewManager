@@ -25,6 +25,7 @@
 // SOFTWARE.
 
 #import "UIView+CGCellContentViewManager.h"
+#import <objc/runtime.h>
 
 @implementation UIView (CGCellContentViewManager)
 

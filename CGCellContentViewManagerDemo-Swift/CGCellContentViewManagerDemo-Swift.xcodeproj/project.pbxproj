@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33BD6EDE1EBB012F0015E236 /* NSObject+CGHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD6ED71EBB012F0015E236 /* NSObject+CGHook.m */; };
+		33BD6EDF1EBB012F0015E236 /* UIImagePickerController+CGCellContentViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD6ED91EBB012F0015E236 /* UIImagePickerController+CGCellContentViewManager.m */; };
+		33BD6EE01EBB012F0015E236 /* UITableViewCell+CGCellContentViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD6EDB1EBB012F0015E236 /* UITableViewCell+CGCellContentViewManager.m */; };
+		33BD6EE11EBB012F0015E236 /* UIView+CGCellContentViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD6EDD1EBB012F0015E236 /* UIView+CGCellContentViewManager.m */; };
 		33E250BC1DD6F91C003F4B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E250BB1DD6F91C003F4B9E /* AppDelegate.swift */; };
 		33E250BE1DD6F91C003F4B9E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E250BD1DD6F91C003F4B9E /* TableViewController.swift */; };
 		33E250C11DD6F91C003F4B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E250BF1DD6F91C003F4B9E /* Main.storyboard */; };
 		33E250C31DD6F91C003F4B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E250C21DD6F91C003F4B9E /* Assets.xcassets */; };
 		33E250C61DD6F91C003F4B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33E250C41DD6F91C003F4B9E /* LaunchScreen.storyboard */; };
-		33E250D01DD6F9BB003F4B9E /* UIView+CGCellContentViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E250CF1DD6F9BB003F4B9E /* UIView+CGCellContentViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33BD6ED51EBB012F0015E236 /* CGCellContentViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCellContentViewManager.h; sourceTree = "<group>"; };
+		33BD6ED61EBB012F0015E236 /* NSObject+CGHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CGHook.h"; sourceTree = "<group>"; };
+		33BD6ED71EBB012F0015E236 /* NSObject+CGHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CGHook.m"; sourceTree = "<group>"; };
+		33BD6ED81EBB012F0015E236 /* UIImagePickerController+CGCellContentViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+CGCellContentViewManager.h"; sourceTree = "<group>"; };
+		33BD6ED91EBB012F0015E236 /* UIImagePickerController+CGCellContentViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+CGCellContentViewManager.m"; sourceTree = "<group>"; };
+		33BD6EDA1EBB012F0015E236 /* UITableViewCell+CGCellContentViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CGCellContentViewManager.h"; sourceTree = "<group>"; };
+		33BD6EDB1EBB012F0015E236 /* UITableViewCell+CGCellContentViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CGCellContentViewManager.m"; sourceTree = "<group>"; };
+		33BD6EDC1EBB012F0015E236 /* UIView+CGCellContentViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGCellContentViewManager.h"; sourceTree = "<group>"; };
+		33BD6EDD1EBB012F0015E236 /* UIView+CGCellContentViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGCellContentViewManager.m"; sourceTree = "<group>"; };
 		33E250B81DD6F91C003F4B9E /* CGCellContentViewManagerDemo-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CGCellContentViewManagerDemo-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E250BB1DD6F91C003F4B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33E250BD1DD6F91C003F4B9E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -23,8 +35,6 @@
 		33E250C21DD6F91C003F4B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33E250C51DD6F91C003F4B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33E250C71DD6F91C003F4B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33E250CE1DD6F9BB003F4B9E /* UIView+CGCellContentViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CGCellContentViewManager.h"; sourceTree = "<group>"; };
-		33E250CF1DD6F9BB003F4B9E /* UIView+CGCellContentViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CGCellContentViewManager.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33BD6ED41EBB012F0015E236 /* CGCellContentViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				33BD6ED51EBB012F0015E236 /* CGCellContentViewManager.h */,
+				33BD6ED61EBB012F0015E236 /* NSObject+CGHook.h */,
+				33BD6ED71EBB012F0015E236 /* NSObject+CGHook.m */,
+				33BD6ED81EBB012F0015E236 /* UIImagePickerController+CGCellContentViewManager.h */,
+				33BD6ED91EBB012F0015E236 /* UIImagePickerController+CGCellContentViewManager.m */,
+				33BD6EDA1EBB012F0015E236 /* UITableViewCell+CGCellContentViewManager.h */,
+				33BD6EDB1EBB012F0015E236 /* UITableViewCell+CGCellContentViewManager.m */,
+				33BD6EDC1EBB012F0015E236 /* UIView+CGCellContentViewManager.h */,
+				33BD6EDD1EBB012F0015E236 /* UIView+CGCellContentViewManager.m */,
+			);
+			name = CGCellContentViewManager;
+			path = ../../CGCellContentViewManager;
+			sourceTree = "<group>";
+		};
 		33E250AF1DD6F91C003F4B9E = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +84,7 @@
 		33E250BA1DD6F91C003F4B9E /* CGCellContentViewManagerDemo-Swift */ = {
 			isa = PBXGroup;
 			children = (
-				33E250CD1DD6F9BB003F4B9E /* CGCellContentViewManager */,
+				33BD6ED41EBB012F0015E236 /* CGCellContentViewManager */,
 				33E250BB1DD6F91C003F4B9E /* AppDelegate.swift */,
 				33E250BD1DD6F91C003F4B9E /* TableViewController.swift */,
 				33E250BF1DD6F91C003F4B9E /* Main.storyboard */,
@@ -66,16 +93,6 @@
 				33E250C71DD6F91C003F4B9E /* Info.plist */,
 			);
 			path = "CGCellContentViewManagerDemo-Swift";
-			sourceTree = "<group>";
-		};
-		33E250CD1DD6F9BB003F4B9E /* CGCellContentViewManager */ = {
-			isa = PBXGroup;
-			children = (
-				33E250CE1DD6F9BB003F4B9E /* UIView+CGCellContentViewManager.h */,
-				33E250CF1DD6F9BB003F4B9E /* UIView+CGCellContentViewManager.m */,
-			);
-			name = CGCellContentViewManager;
-			path = ../../CGCellContentViewManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33E250D01DD6F9BB003F4B9E /* UIView+CGCellContentViewManager.m in Sources */,
+				33BD6EE01EBB012F0015E236 /* UITableViewCell+CGCellContentViewManager.m in Sources */,
 				33E250BE1DD6F91C003F4B9E /* TableViewController.swift in Sources */,
 				33E250BC1DD6F91C003F4B9E /* AppDelegate.swift in Sources */,
+				33BD6EE11EBB012F0015E236 /* UIView+CGCellContentViewManager.m in Sources */,
+				33BD6EDF1EBB012F0015E236 /* UIImagePickerController+CGCellContentViewManager.m in Sources */,
+				33BD6EDE1EBB012F0015E236 /* NSObject+CGHook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		334CF8CE1E18F46C000482AD /* UITableViewCell+CGCellContentViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 334CF8CD1E18F46C000482AD /* UITableViewCell+CGCellContentViewManager.m */; };
 		334CF8D11E18F4E9000482AD /* UIImagePickerController+CGCellContentViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 334CF8D01E18F4E9000482AD /* UIImagePickerController+CGCellContentViewManager.m */; };
+		33BD6ED31EBAF89E0015E236 /* NSObject+CGHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BD6ED21EBAF89E0015E236 /* NSObject+CGHook.m */; };
 		33E2508F1DD6F0ED003F4B9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E2508E1DD6F0ED003F4B9E /* main.m */; };
 		33E250921DD6F0ED003F4B9E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E250911DD6F0ED003F4B9E /* AppDelegate.m */; };
 		33E250951DD6F0ED003F4B9E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E250941DD6F0ED003F4B9E /* TableViewController.m */; };
@@ -24,6 +25,8 @@
 		334CF8CD1E18F46C000482AD /* UITableViewCell+CGCellContentViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CGCellContentViewManager.m"; sourceTree = "<group>"; };
 		334CF8CF1E18F4E9000482AD /* UIImagePickerController+CGCellContentViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImagePickerController+CGCellContentViewManager.h"; sourceTree = "<group>"; };
 		334CF8D01E18F4E9000482AD /* UIImagePickerController+CGCellContentViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImagePickerController+CGCellContentViewManager.m"; sourceTree = "<group>"; };
+		33BD6ED11EBAF89E0015E236 /* NSObject+CGHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CGHook.h"; sourceTree = "<group>"; };
+		33BD6ED21EBAF89E0015E236 /* NSObject+CGHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CGHook.m"; sourceTree = "<group>"; };
 		33E2508A1DD6F0ED003F4B9E /* CGCellContentViewManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGCellContentViewManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E2508E1DD6F0ED003F4B9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33E250901DD6F0ED003F4B9E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				334CF8CD1E18F46C000482AD /* UITableViewCell+CGCellContentViewManager.m */,
 				334CF8CF1E18F4E9000482AD /* UIImagePickerController+CGCellContentViewManager.h */,
 				334CF8D01E18F4E9000482AD /* UIImagePickerController+CGCellContentViewManager.m */,
+				33BD6ED11EBAF89E0015E236 /* NSObject+CGHook.h */,
+				33BD6ED21EBAF89E0015E236 /* NSObject+CGHook.m */,
 			);
 			name = CGCellContentViewManager;
 			path = ../../CGCellContentViewManager;
@@ -177,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				334CF8CE1E18F46C000482AD /* UITableViewCell+CGCellContentViewManager.m in Sources */,
+				33BD6ED31EBAF89E0015E236 /* NSObject+CGHook.m in Sources */,
 				33E250951DD6F0ED003F4B9E /* TableViewController.m in Sources */,
 				334CF8D11E18F4E9000482AD /* UIImagePickerController+CGCellContentViewManager.m in Sources */,
 				33E250AE1DD6F19B003F4B9E /* UIView+CGCellContentViewManager.m in Sources */,

@@ -2,12 +2,12 @@
 Pod::Spec.new do |s|
   s.name         = "CGCellContentViewManager"
   s.version      = "1.0"
-  s.summary      = "Solve the problem that the subview's backgroundColor in the cell's contentView changed unexpected while you are clicking the cell."
+  s.summary      = "Manage cells' chaning backgroundColor behavior when being clicked."
   s.description  = "An elegant way to solve the problem while we're clicking a UITableViewCell, the subviews in the cell's contentView's backgroundColor changed unexpected."
   s.homepage     = "https://github.com/CoderGin/CGCellContentViewManager"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.license = { :type => "MIT", :file => "LICENSE" }
+  s.license = "MIT"
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.author = { "Coder Gin" => "https://github.com/CoderGin" }
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

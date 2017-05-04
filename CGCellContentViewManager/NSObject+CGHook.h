@@ -1,10 +1,10 @@
 //
-//  UIView+CGCellContentViewManager.h
-//  CGCellContentViewManager
+//  NSObject+CGHook.h
+//  CGCellContentViewManagerDemo
 //
-//  Created by Coder Gin on 16/11/11
+//  Created by Gin on 2017/5/4.
 //
-// Copyright (c) 2016 Coder Gin ( https://github.com/CoderGin/CGCellContentViewManager )
+// Copyright (c) 2017 Coder Gin ( https://github.com/CoderGin/CGCellContentViewManager )
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -24,20 +24,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-/// This category will work automatically, as you drag it in your project.
-/// Both supports Objective-C and Swift
-@interface UIView (CGCellContentViewManager)
+@interface NSObject (CGHook)
 
-/// This bool value controls whether the category will work for a view.
-/// Default is NO for all kinds of UIView, incluing UITableViewCell.
-/// If you set YES for a kind of UIView,
-/// means that CGCellContentViewManager will not work for the view,
-/// and the view in a cell's contentView will change backgroundColor as native style while you're clicking the cell.
-/// If you set YES for a kind of UITableViewCell,
-/// means that CGCellContentViewManager will not work for the cell,
-/// and the subviews in the cell's contentView will change backgroundColor as native style while you're clicking the cell.
-@property (nonatomic, assign) BOOL cg_cellContentViewManagerDisabled;
+/// Method Swizzling for instanceMethod
++ (void)instanceMethodSwizzlingFromSelector:(SEL)oriSelector toSelector:(SEL)swSelector;
+
+/// Isa Swizzling for 
 
 @end
